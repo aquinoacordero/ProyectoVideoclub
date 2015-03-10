@@ -5,10 +5,14 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
 
-public class Videoclub {
+/**
+ *
+ * @author Aitor
+ */
+public class ListadoPeliculas {
 
-    public static void main(String[] args) {
-        /*ArrayList<Peliculas> ficheroPeliculas = new ArrayList<Peliculas>();
+    public void ListadoPeliculas() {
+        ArrayList<Peliculas> fPeliculas = new ArrayList<Peliculas>();
         File fichero = new File("Lista.txt");
         Scanner scan = null;
         Peliculas listaPeliculas = new Peliculas();
@@ -23,21 +27,29 @@ public class Videoclub {
                 listaPeliculas.setDirector(dividirLista[1]);
                 listaPeliculas.setGenero(dividirLista[2]);
                 listaPeliculas.setAño(dividirLista[3]);
-                listaPeliculas.setCantidad(Integer.parseInt(dividirLista[4]));
+                //listaPeliculas.setCantidad(Integer.parseInt(dividirLista[4]));
             }
         } catch (Exception except1) {
             except1.printStackTrace();
-        }finally{
-            try{
-                if(scan !=null){
+        } finally {
+            try {
+                if (scan != null) {
                     scan.close();
                 }
-            }catch(Exception except2){
+            } catch (Exception except2) {
                 except2.printStackTrace();
             }
-        }*/
-       ListadoPeliculas obj=new ListadoPeliculas();
-       obj.ListadoPeliculas();
-    }
+        }
 
+        //public void mostrarPeliculas() {
+        Iterator<Peliculas> itrPeliculas = fPeliculas.iterator();
+        while (itrPeliculas.hasNext()) {
+            Peliculas partido = itrPeliculas.next();
+            System.out.println(listaPeliculas.getTitulo()+" "
+                    + listaPeliculas.getDirector() + "-"
+                    + listaPeliculas.getGenero() + " "
+                    + listaPeliculas.getAño());
+        }
+    
+}
 }

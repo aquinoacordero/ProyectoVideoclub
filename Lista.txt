@@ -1,0 +1,41 @@
+Pulp Fiction, Quentin Tarantino, Thriller, 1994, 4
+Reservoir Dogs, Quentin Tarantino, Thriller, 1992, 2
+Uno De Los Nuestros, Martin Scorsese, Mafia, 1990, 3
+Serpico, Sidney Lumet, Policiaco, 1973, 2
+Casino, Martin Scorsese, Mafia, 1995, 4
+Gladiator, Martin Scorsese, Accion, 2000, 3
+Salvar Al Soldado Ryan, Steven Spielberg, Belico, 1998, 2
+El Cabo Del Miedo, Martin Scorsese, Suspense, 1991, 3
+Toro Salvaje, Martin Scorsese, Drama, 1980,3
+Una Mente Maravillosa, Ron Howard, Drama, 2001, 4
+Las Horas, Stephen Daldry, Drama, 2002, 3
+El Señor de los Anillos: El retorno del rey, Peter Jackson, Fantasia, 2003, 4
+La Guerra De Las Galaxias: Una Nueva Esparanza, George Lucas, Ciencia Ficcion, 1977, 3
+Serenity, Joss Whedon, Ciencia Ficcion, 2005, 2
+El Aviador, Martin Scorsese, Biografico, 2004, 2
+Brokeback Mountain, Ang Lee, Drama, 2005, 2
+Taxi Driver, Martin Scorsese, Thriller, 1976, 3
+Babel, Alejandro Gonzalez Iñarritu, Drama, 2006, 3
+Indiana Jones: En Busca Del Arca Perdida, George Lucas, Aventura, 1981, 2
+Batman, Tim Burton, Accion, 1989, 2
+Atonement, Joe Wright, Drama, 2007, 2
+La Jungla De Cristal, John McTiernan, Accion, 1988, 4
+Blade Runner, Ridley Scott, Ciencia Ficcion, 1982, 3
+Impacto Total, Paul Verhoeven, Ciencia Ficcion, 1990, 3
+Slumdog Millionaire, Danny Boyle, Drama, 2008, 4
+El Bueno El Feo Y El Malo, Sergio Leone, Western, 1966, 2
+Avatar, James Cameron, Ciencia Ficcion, 2009, 3
+Los Puentes De Madison, Clint Eastwood, Drama, 1995, 3
+The Social Network, David Fincher, Drama, 2009, 2
+Argo, Ben Affleck, Suspense, 2012, 2
+Sin Perdon, Clint Eastwood, Western, 1992, 3
+12 Años de Esclavitud,  Steve McQueen, 2013, 3
+La Gran Evasion, John Sturges, Belico, 1996, 2
+Ninfomanas,  Lars von Trier, Drama, 2013, 4
+Tres Hombres Y Una Pequeña Dama, Emile Ardolino, Comedia,  1990, 2
+La Chaqueta Metalica, Stanley Kubrik, Belica, 1987, 3
+Resacon, Todd Philips, Comedia, 2009, 4
+La Gran Estafa Americana, David O.Russell, Drama, 2013, 4
+La Naranja Mecanica, Stanley Kubrik, Drama, 1971, 3
+El Barbero Diabolico, Tim Burton, Musical, 2007, 2
+Apocalypse Now, Francis Ford Coppola, Belica, 1979, 2
