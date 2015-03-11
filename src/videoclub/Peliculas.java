@@ -1,13 +1,23 @@
-
 package videoclub;
 
-
 public class Peliculas {
+
     private String titulo;
     private String director;
     private String genero;
     private String año;
     private int cantidad;
+
+    public Peliculas() {
+    }
+
+    public Peliculas(String titulo, String director, String genero, String año) {
+        this.titulo = titulo;
+        this.director = director;
+        this.genero = genero;
+        this.año = año;
+
+    }
 
     public String getTitulo() {
         return titulo;
@@ -48,7 +58,10 @@ public class Peliculas {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return "Peliculas{" + "titulo=" + titulo + ", director=" + director + ", genero=" + genero + ", a\u00f1o=" + año + '}';
+    }
+
 }
