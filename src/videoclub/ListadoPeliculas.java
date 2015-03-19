@@ -86,7 +86,28 @@ public class ListadoPeliculas {
                 null, new Object[]{"Alquilar",
                 "Volver",},
                 "Sair do programa");
-                    
+               
+                    //El if de si el array tiene pelis
+               
+                    switch (seleccion){
+                        case 0: 
+                            
+                           //Escriba usted 
+                           
+                int alquilao= JOptionPane.showOptionDialog(null,"Pelicula alquilada",
+                "Menu", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
+                null, new Object[]{"Volver",
+                "Salir",},
+                "Sair do programa");
+                            switch(alquilao){
+                                case 0:
+                                    this.Menu();
+                                case 1:
+                                    System.exit(0);
+                            }
+                        case 1:
+                            this.Menu();
+                    }
                 } break;
         }
 
