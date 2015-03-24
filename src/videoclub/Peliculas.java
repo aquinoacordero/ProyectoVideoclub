@@ -61,7 +61,7 @@ public class Peliculas {
 
     @Override
     public String toString() {
-        return "Pelicula= " + titulo + "\n" +"director=" + director +"\n" + "genero=" + genero + "\n" +"a\u00f1o=" + año;
+        return "Pelicula= " + titulo + "\n" +"director=" + director +"\n" + "genero=" + genero + "\n" +"a\u00f1o=" + año + "\n";
     }
 
 }

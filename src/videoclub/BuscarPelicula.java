@@ -1,7 +1,10 @@
 package videoclub;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Iterator;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
@@ -23,6 +26,9 @@ public class BuscarPelicula {
                     "Salir del Videoclub"},
                 "Sair do programa");
         Iterator<Peliculas> itrPeli = fPeliculas.iterator();
+        Iterator<Peliculas> itrPeliD = fPeliculas.iterator();
+        Iterator<Peliculas> itrPeliG = fPeliculas.iterator();
+        Iterator<Peliculas> itrPeliAn = fPeliculas.iterator();
 
         if (opcion == 0) {
             String titulo = JOptionPane.showInputDialog("Introduzca el TITULO de la pelicula");
@@ -36,66 +42,97 @@ public class BuscarPelicula {
                             "Sair do programa");
 
                     if (seleccion == 0) {
-                        obj_alq.alquilar(/*pelis.getTitulo()*/);
+                        obj_alq.alquilar(pelis.getTitulo(), fPeliculas);
                     } else {
                         obj_Ini.inicio(fPeliculas);
                     }
                 }
             }
         } else if (opcion == 1) {
-            String titulo = JOptionPane.showInputDialog("Introduzca el DIRECTOR de la pelicula");
+            String director = JOptionPane.showInputDialog("Introduzca el DIRECTOR de la pelicula");
             while (itrPeli.hasNext()) {
                 Peliculas pelis = itrPeli.next();
-                if (titulo.equalsIgnoreCase(pelis.getDirector())) {
-                    int seleccion = JOptionPane.showOptionDialog(null, pelis.toString(),
+                if (director.equalsIgnoreCase(pelis.getDirector())) {
+
+                    System.out.println(pelis.toString());
+
+                }
+            }
+
+            String titulo = JOptionPane.showInputDialog("Introduzca el TITULO de la pelicula");
+            while (itrPeliD.hasNext()) {
+                Peliculas pelisD = itrPeliD.next();
+                if (titulo.equalsIgnoreCase(pelisD.getTitulo())) {
+                    int seleccion = JOptionPane.showOptionDialog(null, pelisD.toString(),
                             "Menu", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
-                            null, new Object[]{"Alquilar",
+                            null, new Object[]{"Alquilar Pelicula",
                                 "Volver",},
                             "Sair do programa");
 
                     if (seleccion == 0) {
-                        obj_alq.alquilar();
+                        obj_alq.alquilar(pelisD.getTitulo(), fPeliculas);
                     } else {
                         obj_Ini.inicio(fPeliculas);
                     }
                 }
             }
+
         } else if (opcion == 2) {
-            String titulo = JOptionPane.showInputDialog("Introduzca el GENERO de la pelicula");
+            String genero = JOptionPane.showInputDialog("Introduzca el GENERO de la pelicula");
             while (itrPeli.hasNext()) {
                 Peliculas pelis = itrPeli.next();
-                if (titulo.equalsIgnoreCase(pelis.getGenero())) {
-                    int seleccion = JOptionPane.showOptionDialog(null, pelis.toString(),
+                if (genero.equalsIgnoreCase(pelis.getGenero())) {
+
+                    System.out.println(pelis.toString());
+                }
+            }
+
+            String titulo = JOptionPane.showInputDialog("Introduzca el TITULO de la pelicula");
+            while (itrPeliG.hasNext()) {
+                Peliculas pelisG = itrPeliG.next();
+                if (titulo.equalsIgnoreCase(pelisG.getTitulo())) {
+                    int seleccion2 = JOptionPane.showOptionDialog(null, pelisG.toString(),
                             "Menu", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
-                            null, new Object[]{"Alquilar",
+                            null, new Object[]{"Alquilar Pelicula",
                                 "Volver",},
                             "Sair do programa");
 
-                    if (seleccion == 0) {
-                        obj_alq.alquilar();
+                    if (seleccion2 == 0) {
+                        obj_alq.alquilar(pelisG.getTitulo(), fPeliculas);
                     } else {
                         obj_Ini.inicio(fPeliculas);
                     }
                 }
             }
+
         } else if (opcion == 3) {
-            String titulo = JOptionPane.showInputDialog("Introduzca el AÑO de la pelicula");
+            String año = JOptionPane.showInputDialog("Introduzca el AÑO de la pelicula");
             while (itrPeli.hasNext()) {
                 Peliculas pelis = itrPeli.next();
-                if (titulo.equalsIgnoreCase(pelis.getAño())) {
-                    int seleccion = JOptionPane.showOptionDialog(null, pelis.toString(),
+                if (año.equalsIgnoreCase(pelis.getAño())) {
+
+                    System.out.println(pelis.toString());
+                }
+            }
+
+            String titulo = JOptionPane.showInputDialog("Introduzca el TITULO de la pelicula");
+            while (itrPeliAn.hasNext()) {
+                Peliculas pelisAn = itrPeliAn.next();
+                if (titulo.equalsIgnoreCase(pelisAn.getTitulo())) {
+                    int seleccion2 = JOptionPane.showOptionDialog(null, pelisAn.toString(),
                             "Menu", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
-                            null, new Object[]{"Alquilar",
+                            null, new Object[]{"Alquilar Pelicula",
                                 "Volver",},
                             "Sair do programa");
 
-                    if (seleccion == 0) {
-                        obj_alq.alquilar();
+                    if (seleccion2 == 0) {
+                        obj_alq.alquilar(pelisAn.getTitulo(), fPeliculas);
                     } else {
                         obj_Ini.inicio(fPeliculas);
                     }
                 }
             }
+
         }
     }
 }

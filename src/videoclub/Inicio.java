@@ -19,7 +19,7 @@ public class Inicio {
             obj_busc.buscarPelicula(fPeliculas);
     }
     else if(opt == 1){
-            obj_dev.devovler();
+            obj_dev.devovler(fPeliculas);
     }
 
 }
