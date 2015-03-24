@@ -10,7 +10,8 @@ public class Videoclub {
     public static void main(String[] args) {
 
         ArrayList<Peliculas> fPeliculas = new ArrayList<Peliculas>();
-
+        
+        Inicio obj_Ini=new Inicio();
         File fichero = new File("Lista.txt");
         Scanner scan = null;
 
@@ -38,17 +39,11 @@ public class Videoclub {
                 except2.printStackTrace();
             }
         }
+        
+      obj_Ini.inicio(fPeliculas);
 
-        Menu obj_menu = new Menu();
-        BuscarPelicula obj_busc = new BuscarPelicula();
-        Devolver obj_dev=new Devolver();
-        int opt;
-        opt = obj_menu.Menu();
-        if (opt == 0) {
-            obj_busc.BuscarPelicula(fPeliculas);
-        }else if(opt==1){
-            obj_dev.devovler();
-        }
+        
     }
-
 }
+
+

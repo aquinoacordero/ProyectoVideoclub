@@ -10,9 +10,9 @@ import javax.swing.JOptionPane;
  */
 public class BuscarPelicula {
 
-    public void BuscarPelicula(ArrayList fPeliculas) {
+    public void buscarPelicula(ArrayList fPeliculas) {
         Alquilar obj_alq = new Alquilar();
-        Menu obj_menu = new Menu();
+        Inicio obj_Ini = new Inicio();
 
         int opcion = JOptionPane.showOptionDialog(null, "Selecciona una opción",
                 "Menu", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
@@ -31,14 +31,14 @@ public class BuscarPelicula {
                 if (titulo.equalsIgnoreCase(pelis.getTitulo())) {
                     int seleccion = JOptionPane.showOptionDialog(null, pelis.toString(),
                             "Menu", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
-                            null, new Object[]{"Alquilar",
+                            null, new Object[]{"Alquilar Pelicula",
                                 "Volver",},
                             "Sair do programa");
 
                     if (seleccion == 0) {
-                        obj_alq.alquilar();
+                        obj_alq.alquilar(/*pelis.getTitulo()*/);
                     } else {
-                        obj_menu.Menu();
+                        obj_Ini.inicio(fPeliculas);
                     }
                 }
             }
@@ -56,11 +56,46 @@ public class BuscarPelicula {
                     if (seleccion == 0) {
                         obj_alq.alquilar();
                     } else {
-                        obj_menu.Menu();
+                        obj_Ini.inicio(fPeliculas);
                     }
+                }
+            }
+        } else if (opcion == 2) {
+            String titulo = JOptionPane.showInputDialog("Introduzca el GENERO de la pelicula");
+            while (itrPeli.hasNext()) {
+                Peliculas pelis = itrPeli.next();
+                if (titulo.equalsIgnoreCase(pelis.getGenero())) {
+                    int seleccion = JOptionPane.showOptionDialog(null, pelis.toString(),
+                            "Menu", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
+                            null, new Object[]{"Alquilar",
+                                "Volver",},
+                            "Sair do programa");
+
+                    if (seleccion == 0) {
+                        obj_alq.alquilar();
+                    } else {
+                        obj_Ini.inicio(fPeliculas);
+                    }
+                }
+            }
+        } else if (opcion == 3) {
+            String titulo = JOptionPane.showInputDialog("Introduzca el AÑO de la pelicula");
+            while (itrPeli.hasNext()) {
+                Peliculas pelis = itrPeli.next();
+                if (titulo.equalsIgnoreCase(pelis.getAño())) {
+                    int seleccion = JOptionPane.showOptionDialog(null, pelis.toString(),
+                            "Menu", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
+                            null, new Object[]{"Alquilar",
+                                "Volver",},
+                            "Sair do programa");
+
+                    if (seleccion == 0) {
+                        obj_alq.alquilar();
+                    } else {
+                        obj_Ini.inicio(fPeliculas);
+                    }
+                }
+            }
         }
-        }
-    }
     }
 }
-    
