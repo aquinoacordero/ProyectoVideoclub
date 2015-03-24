@@ -1,0 +1,47 @@
+package videoclub;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author aquinoacordero
+ */
+public class BuscarPelicula {
+
+    public void BuscarPelicula(ArrayList fPeliculas) {
+        Alquilar obj_alq=new Alquilar();
+        
+        int opcion = JOptionPane.showOptionDialog(null, "Selecciona una opción",
+                "Menu", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
+                null, new Object[]{"Buscar pelicula por titulo",
+                    "Buscar pelicula por director",
+                    "Buscar pelicula por genero",
+                    "Buscar pelicula por año",
+                    "Salir del Videoclub"},
+                "Sair do programa");
+        Iterator<Peliculas> itrPeli = fPeliculas.iterator();
+
+      
+
+            if(opcion==0){
+                String titulo = JOptionPane.showInputDialog("Introduzca el titulo de la pelicula");
+                while (itrPeli.hasNext()) {
+                    Peliculas pelis = itrPeli.next();
+                    if (titulo.equalsIgnoreCase(pelis.getTitulo())) {
+                        int seleccion = JOptionPane.showOptionDialog(null, pelis.toString(),
+                                "Menu", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
+                                null, new Object[]{"Alquilar",
+                                    "Volver",},
+                                "Sair do programa");
+
+                    if(seleccion==0){
+                        
+                    }
+                    }
+                }
+        }
+    }
+}
+
