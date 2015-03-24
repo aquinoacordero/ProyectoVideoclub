@@ -6,4 +6,7 @@ package videoclub;
  */
 public class Alquilar {
     
+    public void alquilar(){
+        System.out.println("Alquilada");
+    }
 }

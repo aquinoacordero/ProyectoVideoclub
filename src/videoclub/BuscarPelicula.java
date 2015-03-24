@@ -12,6 +12,7 @@ public class BuscarPelicula {
 
     public void BuscarPelicula(ArrayList fPeliculas) {
         Alquilar obj_alq=new Alquilar();
+        Menu obj_menu = new Menu();
         
         int opcion = JOptionPane.showOptionDialog(null, "Selecciona una opción",
                 "Menu", JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE,
@@ -37,7 +38,9 @@ public class BuscarPelicula {
                                 "Sair do programa");
 
                     if(seleccion==0){
-                        
+                        obj_alq.alquilar();
+                    }else{
+                        obj_menu.Menu();
                     }
                     }
                 }
